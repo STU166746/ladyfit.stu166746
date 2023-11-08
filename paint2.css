@@ -1,0 +1,548 @@
+html{
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+
+}
+.banner{
+
+    width: 100%;
+    height: 100vh;
+    background:url("images/fem.jpg");
+    background-size: cover;
+    background-position:center ;
+
+}
+.navbar{
+width: 85%;
+margin: auto;
+padding: 35px 0 ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.logo{
+
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: hwb(0 3% 97%);
+    text-transform: uppercase;
+    border: hsl(13, 100%, 29%);
+    font-size: 25px;
+    font-family: consolas;
+
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background:hsl(18, 77%, 42%) ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+
+width: 100%;
+
+}
+
+.content{
+    width:100%;
+    position:absolute;
+    top: 20%;
+    transform: translate(-50);
+    text-align: center;
+    color:black;
+
+
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    color:hwb(0 3% 97%)
+
+
+}
+.content p {
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+
+}
+
+button{
+
+width: 200px;
+padding: 15px 0;
+text-align: center;
+margin: 20px 10px;
+border-radius:25px ;
+font-weight: bold;
+border:2px solid hsl(9, 63%, 49%);
+background: transparent;
+color:hwb(0 31% 68%);
+cursor: pointer;
+position:relative;
+font-size: 25px;
+overflow: hidden;
+
+
+}
+
+
+<!--button-settings-->
+span{
+
+    background: hsl(0, 100%, 29%);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    width: 100%;
+
+   
+
+}
+button:hover {
+    border: none;
+    
+}
+
+
+
+  
+
+<!--website-content-->
+.row{
+
+display: flex;
+height: 58%;
+align-items: center;
+
+}
+.col{
+
+flex-basis: 50%;
+background-repeat: no-repeat;
+background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+
+
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius:10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    color: hsl(3, 82%, 46%);
+    
+   
+}
+.card1{
+   background-image: url('images/zumba1.jpg');
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 100%;
+   
+
+
+}
+.card2{
+    background-image: url('images/camyoga.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+ 
+ 
+ }
+ .card3{
+    background-image: url('images/workouts.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+ 
+ 
+ }
+
+ .card4{
+
+    background-image: url('images/wellbeing.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+ 
+ }
+ .col h3{
+
+text-align: center;
+padding-top: 150px;
+font-size: 25px;
+font-style: italic;
+margin-right: 10px;
+
+ }
+
+ .col h1{
+
+text-align: center;
+padding-top:150px;
+font-size:25px;
+ }
+
+.col h4{
+
+    text-align: center;
+    padding-left: 10px;
+    font-size:25px;
+    padding-top: 10px;
+     }
+
+
+
+q{
+    
+  quotes: initial;
+}
+
+
+
+  <!-----footer------>
+ 
+  
+
+  .footer-container{
+    width: 1170px;
+    font-family: consolas;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: black;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+  }
+  .facebook {
+    background:black;;
+    color:white;
+
+  }
+  
+  .twitter {
+    background:black;;
+    color:white;
+
+  }
+  
+  .google {
+    background:black;;
+    color:white;
+
+  }
+  
+  .linkedin {
+    background:black;;
+    color:white;
+
+  }
+  
+  .youtube {
+    background:black;;
+    color:white;
+
+
+  }
+
+  <!--Contactus-->
+form { max-width:420px; margin:50px auto; }
+input[type=text], select, textarea {
+    color:hsl(0, 0%, 0%);
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: white;
+  border:2px solid hwb(0 4% 66%);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  font-family:Helvetica;
+  }
+  
+  input[type=submit] {
+    
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:hwb(0 98% 0%);
+
+  }
+  
+  input[type=submit]:hover {
+    background-color:  hsl(0, 33%, 42%);
+  }
+  
+  .contactus{
+    border-radius: 5px;
+    background-color:hwb(10 18% 26%);;
+    padding: 20px;
+    font-family:Helvetica;}
+
+<!--meet-the-team-page->
+
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0 8px;
+   
+  }
+  
+  
+
+.title {
+    color: #0a0909;
+  }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color:  rgb(223, 231, 158);
+}
+
+
+
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  box-sizing: border-box;
+  width: fit-content;
+
+}
+
+.button-team {
+    border: black;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  
+.center{ 
+    text-align: center;
+    margin: 20px 10px 10px 80px ;
+    padding: 0 20px;
+    border-style: hidden;
+    border-color: black;
+    border-radius: 20px;
+    letter-spacing:  1px;;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    font-family:Helvetica;
+    font-size: 20px;
+}
+
+hr {
+    height:5px;
+    border-width:0;
+    color:rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0)
+}
+.col-about{
+
+        flex-basis: 50%;
+        background: white;
+      
+        }
+
+
+.card5 {
+    background-image: url('images/support.jpg');
+  width: 500px;
+    background-size: contain;
+    background-color:white;
+    background-repeat: no-repeat;
+    
+}
+
+.card6{
+
+    background-image: url('images/support2.jpg');
+   width: 400px;
+    background-size: contain;
+    background-color:white;
+    background-repeat: no-repeat;
+    
+}
+
+
+.card7{
+
+    background-image: url('images/hug.jpg');
+    width: 450px;
+    background-color:white;
+    background-repeat: no-repeat;
+    
+}
+.event1{
+
+
+    background-image: url('images/support1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius:145px 5px;
+
+}
+
+
+.event2{
+
+    background-image: url('images/hiking.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius:145px 5px;
+
+
+}
+
+.event3{
+
+
+        background-image: url('images/running.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        border-radius:145px 5px;
+    
+    
+    }
+
+.event4{
+
+
+    background-image: url('images/nutrition.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius:145px 5px;
+
+
+}
+
+
+.card-event{
+ 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 350px;
+        height: 300px;
+       padding-left: 20px;
+       background-size: cover;
+    
+        background-color: white;
+      
+    
+}
